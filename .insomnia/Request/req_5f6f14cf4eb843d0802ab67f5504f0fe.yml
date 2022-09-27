@@ -1,7 +1,7 @@
 _id: req_5f6f14cf4eb843d0802ab67f5504f0fe
 type: Request
 parentId: wrk_fe6ca690d78c4297ae2ee7ebb794d760
-modified: 1664259335895
+modified: 1664259690193
 created: 1664258756643
 url: "{{ _.graphql }}"
 name: graphql limitations

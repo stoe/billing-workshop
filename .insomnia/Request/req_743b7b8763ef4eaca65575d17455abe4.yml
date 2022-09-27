@@ -1,7 +1,7 @@
 _id: req_743b7b8763ef4eaca65575d17455abe4
 type: Request
 parentId: fld_99ed562766fa40a7bceafe0f37699c01
-modified: 1664259180867
+modified: 1664259862147
 created: 1664258771202
 url: "{{ _.graphql }}"
 name: graphql query
@@ -10,6 +10,7 @@ method: POST
 body:
   mimeType: application/graphql
   text: '{"query":"query {\n\tviewer
+    {\n\t\tlogin\n\t\tname\n\t\tbio\n\t}\n\tuser(login: \"stoe\")
     {\n\t\tlogin\n\t\tname\n\t\tbio\n\t}\n\trepository(owner: \"stoe-demo\",
     name: \"fuzzy-disco\")
     {\n\t\tid\n\t\tnameWithOwner\n\t}\n}\n","variables":{}}'

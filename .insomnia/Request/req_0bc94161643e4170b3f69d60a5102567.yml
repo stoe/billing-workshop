@@ -1,11 +1,11 @@
-_id: req_e80ede8b835f4a4cb88e98f1bdaaa4cf
+_id: req_0bc94161643e4170b3f69d60a5102567
 type: Request
-parentId: wrk_fe6ca690d78c4297ae2ee7ebb794d760
-modified: 1664261165486
-created: 1664258702592
-url: "{{ _.rest }}/user"
-name: rest
-description: ""
+parentId: fld_fe655f66f68d45c580004d19597fdd13
+modified: 1664261145856
+created: 1664260578066
+url: "{{ _.rest }}/enterprises/stoelzle/settings/billing/actions"
+name: GitHub Actions billing
+description: https://docs.github.com/en/enterprise-cloud@latest/rest/enterprise-admin/billing#get-github-actions-billing-for-an-enterprise
 method: GET
 body: {}
 parameters: []
@@ -18,7 +18,7 @@ authentication:
   type: bearer
   token: "{{ _.token }}"
   disabled: false
-metaSortKey: 0
+metaSortKey: 450
 isPrivate: false
 settingStoreCookies: true
 settingSendCookies: true
