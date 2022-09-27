@@ -1,0 +1,28 @@
+_id: req_e80ede8b835f4a4cb88e98f1bdaaa4cf
+type: Request
+parentId: wrk_fe6ca690d78c4297ae2ee7ebb794d760
+modified: 1664259240036
+created: 1664258702592
+url: "{{ _.rest }}/user"
+name: rest
+description: ""
+method: GET
+body: {}
+parameters: []
+headers:
+  - id: pair_d93bdb4ee0104534b3bb27940490b10c
+    name: Accept
+    value: application/vnd.github.v3+json
+    description: ""
+authentication:
+  type: bearer
+  token: "{{ _.token }}"
+  disabled: false
+metaSortKey: 0
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

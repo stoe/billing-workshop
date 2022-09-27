@@ -1,0 +1,44 @@
+_id: req_5f6f14cf4eb843d0802ab67f5504f0fe
+type: Request
+parentId: wrk_fe6ca690d78c4297ae2ee7ebb794d760
+modified: 1664259335895
+created: 1664258756643
+url: "{{ _.graphql }}"
+name: graphql limitations
+description: ""
+method: POST
+body:
+  mimeType: application/graphql
+  text: '{"query":"query ($count: Int = 0) {\n\trateLimit
+    {\n\t\tnodeCount\n\t\tcost\n\t\tlimit\n\t\tused\n\t\tremaining\n\t\tresetAt\n\t}\n\tviewer
+    {\n\t\trepositories(\n\t\t\tfirst: $count\n\t\t\townerAffiliations:
+    OWNER\n\t\t\torderBy: { field: PUSHED_AT, direction: DESC }\n\t\t)
+    {\n\t\t\ttotalCount\n\t\t\tedges {\n\t\t\t\trepository: node
+    {\n\t\t\t\t\tname\n\t\t\t\t\tpullRequests(first: $count)
+    {\n\t\t\t\t\t\tedges {\n\t\t\t\t\t\t\tpullRequest: node
+    {\n\t\t\t\t\t\t\t\ttitle\n\t\t\t\t\t\t\t\tcomments(first: $count)
+    {\n\t\t\t\t\t\t\t\t\tedges {\n\t\t\t\t\t\t\t\t\t\tcomment: node
+    {\n\t\t\t\t\t\t\t\t\t\t\tbody\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t}\n\t\t\t\t\t}\n\t\t\t\t\tissues(first:
+    $count) {\n\t\t\t\t\t\ttotalCount\n\t\t\t\t\t\tedges {\n\t\t\t\t\t\t\tissue:
+    node
+    {\n\t\t\t\t\t\t\t\ttitle\n\t\t\t\t\t\t\t\tbodyHTML\n\t\t\t\t\t\t\t\tcomments(first:
+    $count) {\n\t\t\t\t\t\t\t\t\tedges {\n\t\t\t\t\t\t\t\t\t\tcomment: node
+    {\n\t\t\t\t\t\t\t\t\t\t\tbody\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t}\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\t\tfollowers(first:
+    $count) {\n\t\t\tedges {\n\t\t\t\tfollower: node
+    {\n\t\t\t\t\tlogin\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\t}\n}\n","variables":{"count":1}}'
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_ce7ab6c9c17e42958f6ab25963ffbef2
+authentication:
+  type: bearer
+  token: "{{ _.token }}"
+metaSortKey: 300
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

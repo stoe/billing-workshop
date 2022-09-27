@@ -1,0 +1,35 @@
+_id: req_3ac7de92244349eeb34c695d145d484f
+type: Request
+parentId: wrk_fe6ca690d78c4297ae2ee7ebb794d760
+modified: 1664259265118
+created: 1664258734150
+url: "{{ _.graphql }}"
+name: graphql query
+description: ""
+method: POST
+body:
+  mimeType: application/graphql
+  text: '{"query":"{\n\torganization(login: \"stoe-actions-playground\")
+    {\n\t\trepositories(first: 100) {\n\t\t\tpageInfo
+    {\n\t\t\t\thasNextPage\n\t\t\t\tendCursor\n\t\t\t}\n\t\t\tnodes
+    {\n\t\t\t\tname\n\t\t\t\topenVulnerabilityAlerts: vulnerabilityAlerts(first:
+    1, states: OPEN)
+    {\n\t\t\t\t\ttotalCount\n\t\t\t\t}\n\t\t\t\tdismissedVulnerabilityAlerts:
+    vulnerabilityAlerts(first: 1, states: DISMISSED)
+    {\n\t\t\t\t\ttotalCount\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\t}\n}\n","variables":{}}'
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_ce7ab6c9c17e42958f6ab25963ffbef2
+authentication:
+  type: bearer
+  token: "{{ _.token }}"
+metaSortKey: 100
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

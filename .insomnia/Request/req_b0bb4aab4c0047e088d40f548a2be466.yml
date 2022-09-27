@@ -1,0 +1,28 @@
+_id: req_b0bb4aab4c0047e088d40f548a2be466
+type: Request
+parentId: fld_99ed562766fa40a7bceafe0f37699c01
+modified: 1664259178471
+created: 1664258771201
+url: "{{ _.rest }}/users/stoe"
+name: rest
+description: ""
+method: GET
+body: {}
+parameters: []
+headers:
+  - id: pair_d93bdb4ee0104534b3bb27940490b10c
+    name: Accept
+    value: application/vnd.github.v3+json
+    description: ""
+authentication:
+  type: bearer
+  token: "{% response 'body', 'req_4e64d71fbccc4ecdbef3dea1887fa8b0',
+    'b64::JC50b2tlbg==::46b', 'never', 60 %}"
+metaSortKey: -1649495738237
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

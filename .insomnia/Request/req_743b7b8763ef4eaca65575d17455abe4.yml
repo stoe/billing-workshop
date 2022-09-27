@@ -1,0 +1,32 @@
+_id: req_743b7b8763ef4eaca65575d17455abe4
+type: Request
+parentId: fld_99ed562766fa40a7bceafe0f37699c01
+modified: 1664259180867
+created: 1664258771202
+url: "{{ _.graphql }}"
+name: graphql query
+description: ""
+method: POST
+body:
+  mimeType: application/graphql
+  text: '{"query":"query {\n\tviewer
+    {\n\t\tlogin\n\t\tname\n\t\tbio\n\t}\n\trepository(owner: \"stoe-demo\",
+    name: \"fuzzy-disco\")
+    {\n\t\tid\n\t\tnameWithOwner\n\t}\n}\n","variables":{}}'
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_ce7ab6c9c17e42958f6ab25963ffbef2
+authentication:
+  type: bearer
+  token: "{% response 'body', 'req_4e64d71fbccc4ecdbef3dea1887fa8b0',
+    'b64::JC50b2tlbg==::46b', 'never', 60 %}"
+metaSortKey: -1649495738187
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
